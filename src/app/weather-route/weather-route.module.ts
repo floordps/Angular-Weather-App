@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { BrowserModule } from '@angular/platform-browser';
 import { WeatherForecastComponent } from '../weather-forecast/weather-forecast.component';
 import { WeatherHomeComponent } from '../weather-home/weather-home.component';
 import { WeatherTidescurrentComponent } from '../weather-tidescurrent/weather-tidescurrent.component';
@@ -15,6 +15,7 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
+    BrowserModule,
     RouterModule.forRoot(routes)
   ],
   declarations: [
