@@ -29,4 +29,8 @@ export class WeatherService {
     return this.fetchRoute(({forecast}) => forecast);
   }
 
+  getForecastCurrentObservation() {
+    return this.fetchRoute(({current_observation}) => current_observation);
+  }
+
 }
